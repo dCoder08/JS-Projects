@@ -1,7 +1,7 @@
 // import { GoogleGenAI } from "@google/genai";
 import { GoogleGenAI } from "https://esm.run/@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: "AQ.Ab8RN6IlvQ1NK3SSoYs8GY9MF5pGOEtIEM4pdJ-S0mHZWv27bQ" });
+const ai = new GoogleGenAI({ apiKey: "Your_APIKEY" });
 
 let cquote;
 let quote;
