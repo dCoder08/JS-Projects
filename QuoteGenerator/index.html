@@ -10,26 +10,31 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body class=" bg-mist-950 font-sans">
-    <h2 class="text-amber-50  text-4xl p-5 font-bold font-mono flex justify-center">Quote Generator</h2>
+<body class=" bg-slate-950 font-sans">
+    <h2 class="text-amber-50  text-4xl p-5 font-bold font-serif flex justify-center">Quote Generator</h2>
     <div class="flex justify-center h-screen items-center">
 
-        <div class="h-100 w-[80%] rounded-[26px]  bg-mist-900 relative  flex items-center">
+        <div class="h-100 w-[80%] rounded-[26px]  bg-mist-90 bg-linear-to-r from-mist-900 to-gray-800 relative  flex items-center border-1 border-mauve-400">
 
-            <div class="bg-neutral-800 rounded-[10px] p-1 m-5 ">
+            <div class="rounded-[10px] p-1 m-10 flex flex-col  relative min-w-[95%]  " >
 
-                <h2 class="text-amber-50 text-2xl font-serif m-10 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus perspiciatis incidunt dolores? Voluptatum, nulla dolorem.</h2>
+                <h2 class="text-amber-50 text-3xl font-serif m-10 font-semibold " id="quote" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                
+                </h2>
+        
+                <p class="text-amber-50 text-2xl font-sans ml-auto m-5 p-4 font-bold italic  relative right-20" id="author">By~Lorem ipsum .</p>        
+                    
             </div>
 
-            <button class="bg-amber-50 rounded-[7px] p-2 text-l absolute right-0 bottom-0 ">Copy</button>
+            <button class="bg-amber-50 rounded-[7px] p-2 text-l absolute right-0 bottom-0 m-3  " id="copy-btn">Copy</button>
             <button type="button"
-                class=" absolute right-[69px] rounded-[7px] bottom-0 bg-amber-50 box-border border border-transparent hover:bg-mauve-900 hover:text-amber-50 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">Next Quote</button>
+                class=" absolute right-[90px] rounded-[7px] m-3  p-4 bottom-0 bg-amber-50 box-border border border-transparent hover:bg-mauve-900 hover:text-amber-50 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" id="next-btn">Next Quote</button>
         </div>
 
     </div>
-
-
+    
+    <!-- <script src="./script.js"></script> -->
+<script type="module" src=  "./script.js"></script>
 
 </body>
 
