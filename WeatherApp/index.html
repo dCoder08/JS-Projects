@@ -1,58 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<link rel="stylesheet" href="./src/output.css">
-    
+    <link rel="stylesheet" href="./src/output.css">
+
 
 </head>
-<body class="bg-mauve-800 bg-[url('../resources/bgimage2.jpg')] ">
+
+<body class="bg-mauve-800 bg-[url('../resources/bgimage6.jpg')] bg-cover bg-no-repeat  text-amber-50 ">
 
 
 
-<div class="flex justify-center">   
+    <div class="flex justify-center">
 
-        <div class="bg-amber-50 rounded-2xl p-2 m-5 " >
-            <input  type="text " placeholder="Enter Place" class="outline-none p-2 w-125" >
+        <div class="bg-amber-50 rounded-2xl p-2 m-5 ">
+            <input type="text " placeholder="Enter Place" class="outline-none p-2 w-125 text-black">
 
-            <button id="search-btn" class="hover:cursor-pointer bg-amber-500 size-10 rounded-xl mr-0" > GO </button>
+            <button id="search-btn" class="hover:cursor-pointer bg-amber-500 size-10 rounded-xl mr-0"> GO </button>
         </div>
-</div>
+    </div>
 
-<div class=" flex justify-center mt-8 ">
-    <div class="sub-continer relative flex bg-red-50 h-200 w-450 rounded-[15px] opacity-70 border-3 border-amber-800">
+    <div class=" flex justify-center mt-8 ">
+        <div
+            class="relative flex bg-white/10 backdrop-blur-xl h-200 w-450 rounded-[15px] border border-white/20 shadow-2xl">
 
-        <svg class="m-5 " width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.768"></g>
-            <g id="SVGRepo_iconCarrier"> <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="m-5 " width="50px" height="50px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                    stroke-width="0.768"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 
-        </path> <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g>
-    
-        
-    </svg> 
-    <h3 class=" m-6 text-2xl ml-0" id="cityName"> City Name</h3>
+                    </path>
+                    <path
+                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+
+
+            </svg>
+            <h3 class=" m-6 text-2xl ml-0" id="cityName">Place</h3>
+
+            <div class="absolute left-10 bottom-2/3 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="25" fill="currentColor" class="bi bi-droplet"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z" />
+                    <path fill-rule="evenodd"
+                        d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z" />
+                </svg>
+
+            </div>
+
+            <h2 class=" absolute left-18 bottom-[68%] text-3xl m-3"> Humidity</h2>
+            <br>
+            <h2 class=" absolute left-18 bottom-[64%] text-3xl m-3" id="humidity"> </h2>
+
+
+            <svg class="absolute right-[14%] bottom-[68%] text-3xl m-3 " xmlns="http://www.w3.org/2000/svg"
+                height="32px" width="50px"
+                viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path fill="rgb(255, 255, 255)"
+                    d="M352 96C352 113.7 366.3 128 384 128L424 128C437.3 128 448 138.7 448 152C448 165.3 437.3 176 424 176L96 176C78.3 176 64 190.3 64 208C64 225.7 78.3 240 96 240L424 240C472.6 240 512 200.6 512 152C512 103.4 472.6 64 424 64L384 64C366.3 64 352 78.3 352 96zM416 448C416 465.7 430.3 480 448 480L480 480C533 480 576 437 576 384C576 331 533 288 480 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L480 352C497.7 352 512 366.3 512 384C512 401.7 497.7 416 480 416L448 416C430.3 416 416 430.3 416 448zM192 576L232 576C280.6 576 320 536.6 320 488C320 439.4 280.6 400 232 400L96 400C78.3 400 64 414.3 64 432C64 449.7 78.3 464 96 464L232 464C245.3 464 256 474.7 256 488C256 501.3 245.3 512 232 512L192 512C174.3 512 160 526.3 160 544C160 561.7 174.3 576 192 576z" />
+            </svg>
+
+
+            <h2 class=" absolute right-18 bottom-[68%] text-3xl m-3"> Wind Speed</h2>
+            <br>
+            <h2 class=" absolute right-18 bottom-[64%] text-3xl m-3" id="windSpeed"> </h2>
+
+
+            <div class="absolute right-1/2 bottom-1/2 flex flex-col">
+
+                <img src="" id="logoimg" alt="">
+
+                <h2 class="text-7xl font-bold " id="temp">30 ℃</h2>
+                <br>
+                <h2 class=" text-3xl " id="description"> Feels Like</h2>
+            </div>
+
+            <div>
+                <h3 class="absolute right-0 m-5 mr-7 text-2xl" id="date">Date</h3>
+                <h3 class=" absolute top-15 right-0 mt-2 mr-7 text-2xl " id="time">Time </h3>
+            </div>
+
+
+            <div class=" flex justify-center">
+                <div class=" m-5 absolute left-0 bottom-0  flex justify-center">
+                    <div 
+                        class=" wCard   text-2xl flex flex-col items-center  justify-center ml-10  bg-white/20 backdrop-blur-xl h-60 w-50 rounded-[15px] border border-white/20 shadow-2xl">
+
+                        <h2 class="   mt-2">Time</h2>
+                        <img src="https://openweathermap.org/payload/api/media/file/02d.png" class="h-32.5 w-[145px]  "
+                            alt="">
+                        <h2 class="  mb-2 bottom-0">Temp</h2>
+
+                    </div>
+
+                    <div 
+                        class=" wCard text-2xl flex flex-col items-center  justify-center ml-12  bg-white/20 backdrop-blur-xl h-60 w-50 rounded-[15px] border border-white/20 shadow-2xl">
+
+                        <h2 class="   mt-2">Time</h2>
+                        <img src="https://openweathermap.org/payload/api/media/file/02d.png" class="h-32.5 w-[145px]  "
+                            alt="">
+                        <h2 class="  mb-2 bottom-0">Temp</h2>
+
+                    </div>
 
 
 
-   <div>
-       <h2 class="absolute right-1/2 bottom-2/3 text-3xl font-bold" id="temp">30 ℃</h2>
-  </div>
+                    <div
+                        class=" wCard text-2xl flex flex-col items-center  justify-center ml-12  bg-white/20 backdrop-blur-xl h-60 w-50 rounded-[15px] border border-white/20 shadow-2xl">
 
-  <div>
-    <h3 class="absolute right-0 m-5 mr-7 text-2xl" id="date">42/06/2026</h3>
-    <h3 class=" absolute top-15 right-0 mt-2 mr-7 text-2xl " id="time">Time </h3>
-  </div>
-    
+                        <h2 class="   mt-2">Time</h2>
+                        <img src="https://openweathermap.org/payload/api/media/file/02d.png" class="h-32.5 w-[145px]  "
+                            alt="">
+                        <h2 class="  mb-2 bottom-0">Temp</h2>
 
-    
-    </div>  
-    
-</div>
+                    </div>
 
-<script src="./script.js"></script>
+                    <div
+                        class=" wCard  text-2xl flex flex-col items-center  justify-center ml-12  bg-white/20 backdrop-blur-xl h-60 w-50 rounded-[15px] border border-white/20 shadow-2xl">
 
-    
+                        <h2 class="   mt-2">Time</h2>
+                        <img src="https://openweathermap.org/payload/api/media/file/02d.png" class="h-32.5 w-[145px]  "
+                            alt="">
+                        <h2 class="  mb-2 bottom-0">Temp</h2>
+
+                    </div>
+
+                    <div
+                        class="  wCard text-2xl flex flex-col items-center  justify-center ml-12  bg-white/20 backdrop-blur-xl h-60 w-50 rounded-[15px] border border-white/20 shadow-2xl">
+
+                        <h2 class="   mt-2">Time</h2>
+                        <img src="https://openweathermap.org/payload/api/media/file/02d.png" class="h-32.5 w-[145px]  "
+                            alt="">
+                        <h2 class="  mb-2 bottom-0">Temp</h2>
+
+                    </div>
+
+                    <div
+                        class=" wCard text-2xl flex flex-col items-center  justify-center ml-12  bg-white/20 backdrop-blur-xl h-60 w-50 rounded-[15px] border border-white/20 shadow-2xl">
+
+                        <h2 class="   mt-2">Time</h2>
+                        <img src="https://openweathermap.org/payload/api/media/file/02d.png" class="h-32.5 w-[145px]  "
+                            alt="">
+                        <h2 class="  mb-2 bottom-0">Temp</h2>
+
+                    </div>
+
+                    <div
+                        class=" wCard text-2xl flex flex-col items-center  justify-center ml-12  bg-white/20 backdrop-blur-xl h-60 w-50 rounded-[15px] border border-white/20 shadow-2xl">
+
+                        <h2 class="   mt-2">Time</h2>
+                        <img src="https://openweathermap.org/payload/api/media/file/02d.png" class="h-32.5 w-[145px]  "
+                            alt="">
+                        <h2 class="  mb-2 bottom-0">Temp</h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script src="./script.js" ></script>
+
+
 </body>
+
 </html>
