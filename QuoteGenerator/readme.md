@@ -3,7 +3,7 @@
 <h2>About This Project : </h2>
 <p> I made a Qoute Generator Page with use of Gemini API and made the use of TailwindCSS. </p>
 
-<h2>Features </h2>
+<h2>Features: </h2>
 <ul>
   <li> Quote Generated using Gemini API </li><br>
    <li> Copy Button to copy Quote. </li><br>
