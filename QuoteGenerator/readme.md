@@ -11,4 +11,4 @@
 </ul>
 <br>
 
-<h3> Learned about: Tailwind and how to start with api </h3>
+<h3> Learned about: Tailwind and how to start with API </h3>
